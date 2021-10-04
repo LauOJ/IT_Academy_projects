@@ -1,0 +1,115 @@
+ /* Split the screen in half */
+ .split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  /* Control the left side */
+  .left {
+    left: 0;
+    background-color: #111;
+  }
+  
+  .left i {
+    background-color: white;
+    color:red;
+ 
+  }
+
+  .left p {
+    font-size: 1.5rem;
+    color: red;
+    margin: 20px;
+    }
+
+  .left button {
+    background-color:red;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    }
+
+  /* Control the right side */
+  .right {
+    right: 0;
+    background-color: red;
+  }
+  
+  .right i {
+    background-color: white;
+    color:#111;
+    }
+
+  .right p {
+    font-size: 1.5rem;
+    color: #111;
+    margin: 20px;
+    }
+
+.right button {
+    background-color:#111;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    }
+
+  /* If you want the content centered horizontally and vertically */
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  /* Style the image inside the centered container, if needed */
+  .centered i {
+    font-size: 5rem ;
+    width: 150px;
+    border-radius: 50%;
+    padding: 20px 0;
+    margin: 20px;
+  } 
+
+  #velActual1, #velActual2{
+
+    margin-top: 60px;
+  }
+
+
+  h1{
+      color: white;
+  }
+
+.rocket1{
+  animation-name: move1;
+  animation-duration: 4s;
+}
+
+@keyframes move1 {
+    0%,
+    20%,
+    40%,
+    50% {
+    opacity: 1;
+    -webkit-transform: scale(1, 1) translateX(0);
+    transform: scale(1, 1) translateX(0);
+    }
+    10%,
+    30% {
+    opacity: 1;
+    -webkit-transform: scale(1.1, 1.1) translateX(0);
+    transform: scale(1.1, 1.1) translateX(0);
+    }
+    100% {
+    opacity: 0;
+    -webkit-transform: scale(1, 1) translate(900%, -900%);
+    transform: scale(1, 1) translate(900%, -900%);
+    }
+    
+}

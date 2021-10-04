@@ -1,0 +1,52 @@
+<!-- Contact Section-->
+
+<section class="page-section" id="contact">
+    <div class="container">
+
+        <!-- Contact Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contacta'm</h2>
+        <!-- Icon Divider-->
+
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fa fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        
+        <form class="contactForm" [formGroup]="contactForm" (ngSubmit)="onSubmit()" method="post" action="src/app/Components/contact/contact-form-process.php">  
+          <div>
+            <!-- Value: {{contactForm.value | json}} -->
+
+              <mat-form-field>              
+                <input matInput  formControlName="name" placeholder="El teu nom">
+                <mat-error *ngIf="control('name')?.errors?.required">Però com et dius?</mat-error>
+              </mat-form-field>
+
+              <mat-form-field>
+                <input matInput  formControlName="email" placeholder="El teu mail">
+                <mat-error *ngIf="control('email')?.errors?.email">Això no té pinta d'email</mat-error>
+                <mat-error *ngIf="control('email')?.errors?.required">Aquest camp també és obligatori</mat-error>
+                
+              </mat-form-field>
+
+
+                <mat-form-field>
+                <input matInput formControlName="phoneNumber" placeholder="El teu telèfon">
+                <mat-error *ngIf="control('phoneNumber')?.errors?.pattern">Això no té pinta de número de telèfon</mat-error>
+
+                <mat-error *ngIf="control('phoneNumber')?.errors?.required">Aquest camp també és obligatori</mat-error>
+                </mat-form-field>
+          </div>
+                <br>
+              <mat-form-field class="message">
+                <textarea matInput formControlName="message" placeholder="El teu missatge"></textarea>
+                <mat-error *ngIf="control('message')?.errors?.required">Alguna cosa deus voler dir!</mat-error>
+              </mat-form-field> 
+
+              <button type="submit" mat-raised-button [disabled]="contactForm.invalid" color="primary">Envia'l</button>
+
+        </form>
+    </div>
+</section>
+
+  

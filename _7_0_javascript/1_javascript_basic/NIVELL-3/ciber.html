@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M07_01: javascript1</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="instruccions">
+  <h2>INSTRUCCIONS D'ÚS:</h2>
+  <ul>
+    <li>Introdueix un número al primer camp de text</li>
+    <li>Introdueix un número al segon camp de text</li>
+    <li>Tria l'operació que vols fer</li>
+    <li>Se't mostrarà el resultat a la pantalla!</li>
+
+  </ul>
+</div>
+    <div class="ext">
+<p id="result">0</p>
+
+<input id="num1" type="text" placeholder="introdueix un número">
+<input id="num2" type="text" placeholder="introdueix un altre número">
+
+<div class="operacions">
+<div onclick="suma()" class="op">+</div>
+<div onclick="resta()" class="op">-</div>
+<div onclick="mult()" class="op">x</div>
+<div onclick="div()" class="op">/</div>
+</div>
+   
+
+    <script>
+
+function suma(){
+  let num1 = +(document.getElementById("num1").value);
+
+  let num2 = +(document.getElementById("num2").value);
+
+  let num3 = num1+num2;
+
+  document.getElementById("result").innerHTML = num3;
+
+}
+
+function resta(){
+  let num1 = +(document.getElementById("num1").value);
+
+  let num2 = +(document.getElementById("num2").value);
+
+  let num3 = num1-num2;
+
+  document.getElementById("result").innerHTML = num3;
+
+}
+
+
+function mult(){
+  let num1 = +(document.getElementById("num1").value);
+
+  let num2 = +(document.getElementById("num2").value);
+
+  let num3 = num1*num2;
+
+  document.getElementById("result").innerHTML = num3;
+
+}
+
+
+function div(){
+  let num1 = +(document.getElementById("num1").value);
+
+  let num2 = +(document.getElementById("num2").value);
+
+  let num3 = num1/num2;
+
+  document.getElementById("result").innerHTML = num3.toFixed(4);
+
+}
+
+
+
+
+    </script>
+</body>
+</html>

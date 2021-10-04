@@ -1,0 +1,54 @@
+/* MAIN CONTENT (GRID) */
+
+.main-content{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+article {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat (2, 1fr);
+
+    div{
+        display: flex;
+        flex-flow: column;
+        padding: 15px;
+        margin: 10px;
+
+        h2{
+            background-color: $myColor;
+            color: white;
+            font-size: 1.2rem;
+            margin-top: -2px;
+            padding: 10px 0 0 3px;
+            }
+        
+            img{
+                object-fit: cover;
+                width: auto;
+                height: 250px;
+              }
+        
+            a {
+                text-decoration: none;
+                color: black;
+                opacity: 0.6;
+            }
+
+    }
+
+    div:hover{
+        @include hover;   
+    }
+
+   
+}
+
+.subtitol{
+    font-size: 15px;
+    color: lavender;
+    font-weight: bold;
+    margin: -17px 0 0;
+    padding: 0 0 0 2px;
+}

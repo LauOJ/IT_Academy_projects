@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+
+	<link rel="stylesheet" href="style.css">
+	<title>Login form</title>
+</head>
+<body>
+
+	<!-----------LOGIN FORM------------->
+
+	<div class="container">
+		<div class="header">
+			<h2>Entra</h2>
+		</div>
+	<form class="form" id="form">
+	<div class="form-control">
+		<label for="">Email</label>
+		<input type="text" placeholder="email@gam.com" id="email">
+		<i class="fas fa-check-circle"></i>
+		<i class="fas fa-exclamation-circle"></i>
+		<small>Error message</small>
+	</div>
+
+	
+	<div class="form-control">
+		<label for="">Contrassenya</label>
+		<input type="text" placeholder="password" id="password">
+		<i class="fas fa-check-circle"></i>
+		<i class="fas fa-exclamation-circle"></i>
+		<small>Error message</small>
+	</div>
+	<button>Submit</button>
+</form>
+</div>
+
+<script src="validate-login.js"></script>	
+</body>
+</html>

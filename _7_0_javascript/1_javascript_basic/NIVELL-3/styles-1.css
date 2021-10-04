@@ -1,0 +1,55 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 5rem;
+}
+.button {
+    cursor: pointer;
+    background-color: #105312; 
+    margin: 50px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+
+  }
+
+.ext{
+  border: 50px rgb(31, 36, 78) solid;
+  background-color: rgb(59, 36, 85);
+  padding: 10px 30px 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-radius: 15%;
+}
+
+#result{
+  border: 1px white solid;
+  grid-row: 1;
+  grid-column: 1/5;
+  font-size: 5rem;
+  color: white;
+  padding: 10px;
+  border-radius: 5%;
+}
+
+
+.num{
+  cursor: pointer;
+  border-radius: 30%;
+  border: 1px white solid;
+  padding: 20px;
+  margin: 5px;
+  text-align: center;
+  color: white;
+}
+
+
+#resp {
+  text-align: center;
+  font-size: 50px;
+  
+}

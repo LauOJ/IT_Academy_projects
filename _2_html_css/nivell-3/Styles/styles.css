@@ -1,0 +1,275 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+:root {
+    --main-color:rgb(39,90,73);
+}
+
+body{
+    color: var(--main-color);
+}
+
+ul {
+   list-style: none; 
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+a:hover{
+border-bottom: 1px solid rgb(39,90,73);
+}
+
+h1{
+    font-size: 50px;
+    color: var(--main-color);
+
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+
+/* Navigation */
+
+.nav-logo {
+    width: 80px;    
+}
+
+.nav-main {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    font-size: 14px;
+    height: 75px;
+    padding: 20px 0;
+}
+
+.nav-main ul {
+display: flex;
+}
+
+.nav-main ul li{
+padding: 15px;
+}
+
+.nav-main ul li a {
+    color: var(--main-color);
+}
+
+.nav-main ul li a:hover{
+border-bottom: 1px solid var(--main-color); 
+}
+
+/*Showcase*/
+.showcase {
+    width: 100%;
+    height: 550px;
+    background: url('../Images/showcase-image-transparent.png') no-repeat center center/cover;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+.showcase h1 {
+    font-weight: 500;
+    margin: 50px;
+}
+
+/*Productes destacats*/
+
+.productes-title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    margin: 20px 0;
+}
+
+.productes{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    align-items: center;
+    
+}
+
+.productes img {
+    height: 300px;
+    margin: 20px;
+}
+
+.productes section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.productes a {
+font-weight: bold;
+border: 1px solid var(--main-color); 
+padding: 10px;
+margin: 5px;
+
+}
+
+.productes a:hover {
+background-color: var(--main-color);
+color:white;
+    
+    }
+
+/*Projectes destacats*/
+
+.projectes-title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    background-color: rgb(39,90,73,0.8);
+    color: white;
+    margin: 50px 0 0;
+}
+
+.projectes{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    align-items: center;
+    background-color: rgb(39,90,73,0.8);
+    color: white;
+    padding: 0 0 20px;
+}
+
+.projectes a{
+    color: white;
+}
+
+.projectes img{
+    height: 300px;
+    margin: 20px;
+}
+
+.projectes section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.projectes a {
+    font-weight: bold;
+    border: 1px solid white; 
+    padding: 10px;
+    margin: 5px;
+    
+    }
+    
+    .projectes a:hover {
+    background-color: var(--main-color);
+    color:white;
+        
+        }
+
+
+/*Activitats destacades*/
+
+.activitats-title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    margin: 50px 0;
+}
+
+.activitats{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    align-items: center;
+
+}
+
+.activitats img{
+    height: 300px;
+    margin: 20px;
+}
+
+.activitats section {
+    display: flex;
+    justify-content: center;
+    padding: 0  0 20px 0;
+
+}
+
+.activitats-text {
+
+ margin: 30px 0;
+ padding: 30px;
+ flex-direction: column;
+ 
+}
+
+
+.activitats-text a {
+    font-weight: bold;
+    border: 1px solid var(--main-color); 
+    padding: 10px;
+    margin: 50px 0 0 0;
+    
+    }
+    
+.activitats-text a:hover {
+    background-color: var(--main-color);
+    color:white;
+        
+        }
+    
+.activitats-text p{
+    padding: 20px 0;
+}
+
+/*Footer*/
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75px;
+    background-color:rgb(39,90,73,0.8);
+    color: white;
+
+}
+
+footer a {
+    color: white;
+    padding: 20px;
+    font-size: 600px;
+}
+
+.fa{
+
+    font-size: 35px;
+}
+
+footer div{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    font-size: 14px;
+    height: 75px;
+    padding: 20px 0;
+}
+

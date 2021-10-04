@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M07_01: javascript1</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <button class="button" onclick="exU()" >Exercici 1</button>
+
+    <button class="button" onclick="exDos()" >Exercici 2</button>
+
+
+    <button class="button" onclick="exTres()" >Exercici 3</button>
+
+
+    <button class="button" onclick="exQuatre()" >Exercici 4</button>
+    
+
+    <button class="button" onclick="exCinc()" >Exercici 5</button>
+
+    <button class="button" onclick="exSis()" >Exercici 6</button>
+
+    <button class="button" onclick="exSet()" >Exercici 7</button>
+
+    <button class="button" onclick="exVuit()" >Exercici 8</button>
+
+    <p id="resp"></p>
+    
+
+    <script>
+//EXERCICI 1
+function exU(){
+console.log("Hola món");
+}
+
+//EXERCICI 2
+function exDos(){
+alert ("Em dic Laura!");
+}
+
+//EXERCICI 3
+
+function exTres(){
+let nom = prompt("Quin és el teu nom?");
+let cognom = prompt("Quin és el teu nom?");
+
+document.getElementById("resp").innerHTML = "Et dius "+nom+" "+cognom;
+}
+
+//EXERCICI 4
+
+function exQuatre(){
+let num1 = +prompt("Escriu un número");
+let num2 = +prompt("Escriu un altre número");
+let num3 = num1+num2;
+
+document.getElementById("resp").innerHTML = "La suma entre "+num1+" i "+num2+" és "+num3;
+}
+
+
+//EXERCICI 5
+
+function exCinc(){
+let nota_examen = +prompt("Quina nota has tret?");
+
+if (nota_examen >= 5 && nota_examen <= 10) {
+
+    alert ("Felicitats! Has aprovat")
+
+} else if (nota_examen < 5){
+
+    alert ("Has suspès! Torna-ho a intentar!");
+
+} else {
+    alert ("Ha de ser una nota de l'1 al 10!");
+
+}
+}
+
+//EXERCICI 6
+
+function exSis(){
+
+let color = prompt("Digues un color");
+
+document.getElementById("resp").innerHTML = "Tinc un cotxe "+color;
+
+}
+
+//EXERCICI 7
+
+function exSet(){
+
+let objectes = ["taula", "cadira", "ordinador", "llibreta"];
+let i;
+
+for (i = 0; i < objectes.length;i++ ){
+
+console.log("L'objecte "+(objectes[i])+" és a la posició "+i);
+    document.getElementById("resp").innerHTML = "Mira la consola -->";
+}
+
+}
+
+
+//EXERCICI 8
+
+function exVuit(){
+let num1 = +prompt("Escriu un número");
+let num2 = +prompt("Escriu un altre número");
+let num3;
+let op = prompt("Quina operació vols fer? \n Opcions:\n Suma \n Resta \n Multiplicació").toLowerCase();
+
+switch(op) {
+  case "suma":
+    num3 = num1+num2;
+  document.getElementById("resp").innerHTML = "La "+op+" de "+num1+" i "+num2+" és "+num3;
+    break;
+  case "resta":
+  num3 = num1-num2;
+  document.getElementById("resp").innerHTML = "La "+op+" de "+num1+" i "+num2+" és "+num3;
+    break;
+  case "multiplicació":
+  num3 = num1*num2;
+  document.getElementById("resp").innerHTML = "La "+op+" de "+num1+" i "+num2+" és "+num3;
+    break;
+    case "multiplicacio":
+  num3 = num1*num2;
+  document.getElementById("resp").innerHTML = "La "+op+" de "+num1+" i "+num2+" és "+num3;
+    break;
+  default:
+  alert ("Has de triar una de les tres opcions");
+} 
+
+
+}
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+.tot{
+    background-color: rgb(226, 239, 245);
+    color: rgb(9, 5, 70);
+    border: solid 5px rgb(9, 5, 70);
+    padding: 30px 100px;
+    border-radius: 10%;
+}
+
+label{
+    margin-top:30px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    margin-bottom:25px;
+}
+
+p{
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+input{
+    height: 25px;
+}
+
+.share{
+        
+    .fa-copy,  .fa-share-alt, .fa-download{
+        font-size: 60px;
+        margin: 30px 30px 0;
+        color:rgb(9, 5, 70);
+        background-color: white;
+        border:solid 2px rgb(9, 5, 70);
+        border-radius: 50%;
+        padding: 10px;
+        cursor: pointer;
+
+    }
+
+    p{
+        font-size: 12px;
+    }
+
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+
+    li{
+        margin: 0 20px;
+    }
+}
+
+.color {
+    margin-top: 20px;
+
+    button{
+        margin: 8px;
+        border: none;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 100%;
+      }
+
+    
+}
+
+.color > button:nth-of-type(1){
+background-color: darkblue;
+}
+
+.color > button:nth-of-type(2){
+    background-color: green;
+}
+
+.color > button:nth-of-type(3){
+    background-color: darkorange;
+}
+
+.color > button:nth-of-type(4){
+    background-color: black;
+}

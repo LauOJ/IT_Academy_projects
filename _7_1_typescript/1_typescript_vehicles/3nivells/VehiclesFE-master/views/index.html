@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <script src="../models/car.js"></script>
+    <script src="../models/wheel.js"></script>
+    <script src="../controllers/controllers.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="#" class="carForm" id="carForm">
+      <div class="form-group">
+        <label for="inputMatricula">Matrícula</label>
+        <input
+          type="text"  name="inputMatricula"
+          class="form-control"
+          id="inputMatricula"
+        />
+        <div class="invalid-feedback" id="errorMatricula"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="inputColor">Color</label>
+        <input
+          type="text"
+          name="inputColor"
+          class="form-control"
+          id="inputColor"
+        />
+        <div class="invalid-feedback" id="errorColor"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="inputMarca">Marca</label>
+        <input
+          type="text"
+          name="inputMarca"
+          class="form-control"
+          id="inputMarca"
+        />
+        <div class="invalid-feedback" id="errorMarca"></div>
+      </div>
+
+      <button type="button" onclick="validateCar()" class="btn">
+        Crea Cotxe
+      </button>
+    </form>
+
+    <form class="wheelForm noForm" id="wheelForm">
+      <div class="wheels">
+        <div>
+          <label for="">Roda1: diàmetre</label>
+          <!-- <input type="number" id="diametre1" /> -->
+          <input type="text" id="diametre"/>
+          <div class="invalid-feedback" id="errorDiametre1"></div>
+        </div>
+
+        <div>
+          <label for="">Roda1: marca</label>
+          <!-- <input type="text" id="marca1" /> -->
+          <input type="text" id="marca"/>
+          <div class="invalid-feedback" id="errorMarca1"></div>
+        </div>
+
+        <div>
+          <label for="">Roda2: diàmetre</label>
+          <!-- <input type="number" id="diametre2" /> -->
+          <input type="text" id="diametre"/>
+          <div class="invalid-feedback" id="errorDiametre2"></div>
+        </div>
+
+        <div>
+          <label for="">Roda2: marca</label>
+          <!-- <input type="text" id="marca2" /> -->
+          <input type="text" id="marca"/>
+          <div class="invalid-feedback" id="errorMarca2"></div>
+        </div>
+
+        <div>
+          <label for="">Roda3: diàmetre</label>
+          <!-- <input type="number" id="diametre3" /> -->
+          <input type="text" id="diametre"/>
+          <div class="invalid-feedback" id="errorDiametre3"></div>
+        </div>
+
+        <div>
+          <label for="">Roda3: marca</label>
+          <!-- <input type="text" id="marca3" /> -->
+          <input type="text" id="marca"/>
+          <div class="invalid-feedback" id="errorMarca3"></div>
+        </div>
+
+        <div>
+          <label for="">Roda4: diàmetre</label>
+          <!-- <input type="number" id="diametre4" /> -->
+          <input type="text" id="diametre"/>
+          <div class="invalid-feedback" id="errorDiametre4"></div>
+        </div>
+
+        <div>
+          <label for="">Roda4: marca</label>
+          <!-- <input type="text" id="marca4"/> -->
+          <input type="text" id="marca"/>
+          <div class="invalid-feedback" id="errorMarca4"></div>
+        </div>
+      </div>
+      <button
+        type="button"
+        onclick="validateWheels()"
+        class="btn"
+        id="wheelBtn"
+      >
+        Afegir rodes
+      </button>
+    </form>
+
+    <div id="allInfo">
+    <p id="carInfo"></p>
+    <p id="wheelInfo"></p>
+   </div> 
+   <button
+        type="button"
+        onclick="nouCotxe()"
+        class="btn noForm"
+        id="wheelInfoBtn"
+      >
+        Nou cotxe
+      </button>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+

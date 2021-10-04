@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M07_01: javascript1</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+   
+    <button class="button" onclick="calculadora()" >Caculadora</button>
+
+    <p id="resp"></p>
+    
+
+    <script>
+
+//EXERCICI 8
+
+function calculadora(){
+let num1 = +prompt("Escriu un número");
+let num2 = +prompt("Escriu un altre número");
+let num3;
+let op = prompt("Quina operació vols fer? \n Opcions:\n Suma \n Resta \n Multiplicació \n Divisió").toLowerCase();
+
+switch(op) {
+
+  case "suma":
+    num3 = num1+num2;
+  document.getElementById("resp").innerHTML = "La "+op+" de "+num1+" i "+num2+" és "+num3;
+    break;
+
+  case "resta":
+  num3 = num1-num2;
+  document.getElementById("resp").innerHTML = "La "+op+" de "+num1+" i "+num2+" és "+num3;
+    break;
+
+  case "multiplicació":
+  num3 = num1*num2;
+  document.getElementById("resp").innerHTML = "La "+op+" de "+num1+" i "+num2+" és "+num3;
+    break;
+
+    case "multiplicacio":
+  num3 = num1*num2;
+  document.getElementById("resp").innerHTML = "La "+op+" de "+num1+" i "+num2+" és "+num3;
+    break;
+
+    case "divisió":
+  num3 = num1/num2;
+
+    if ((num1 == 0) || (num2 == 0)){
+      alert ("tria un altre número que no sigui el 0");
+    } else {
+      document.getElementById("resp").innerHTML = "La "+op+" de "+num1+" i "+num2+" és "+num3;
+    }
+    break;
+
+    case "divisio":
+  num3 = num1/num2;
+
+    if ((num1 == 0) || (num2 == 0)){
+      alert ("tria un altre número que no sigui el 0");
+    } else {
+      document.getElementById("resp").innerHTML = "La "+op+" de "+num1+" i "+num2+" és "+num3;
+    }
+    break;
+  default:
+  alert ("Has de triar una de les quatre opcions:\n Suma \n Resta \n Multiplicació \n Divisió");
+} 
+
+
+}
+
+
+    </script>
+</body>
+</html>

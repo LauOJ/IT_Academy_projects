@@ -1,0 +1,58 @@
+EXERCICI 1
+
+    SELECT count(*) as total_record FROM flights;
+
+
+EXERCICI 2
+
+    SELECT origin, AVG (DepDelay), AVG (ArrDelay)
+    FROM flights
+    GROUP BY origin;
+
+
+EXERCICI 3
+
+    SELECT origin, colYear, colMonth, AVG (ArrDelay)
+    FROM flights
+    GROUP BY origin, colYear, colMonth
+    ORDER BY origin ASC;
+
+
+EXERCICI 4
+
+
+   SELECT City, colYear, colMonth, AVG (ArrDelay)
+   FROM flights
+   LEFT JOIN usairports
+   ON flights.Origin = usairports.IATA
+   GROUP BY City, colYear, colMonth
+   ORDER BY City;
+   
+
+EXERCICI 5
+     
+  SELECT UniqueCarrier, colYear, colMonth, COUNT(*) total_cancelled 
+  FROM flights
+  GROUP BY UniqueCarrier, colYear, colMonth, cancelled
+  HAVING cancelled > 0
+  ORDER BY COUNT(*) DESC
+
+   
+   
+EXERCICI 6
+
+   SELECT TailNum, Distance
+   FROM flights
+   GROUP BY TailNum
+   ORDER BY Distance DESC
+   LIMIT 10;
+
+
+EXERCICI 7
+
+    SELECT UniqueCarrier, AVG (ArrDelay)
+    FROM flights
+    GROUP BY UniqueCarrier
+    HAVING AVG(ArrDelay) > 10
+    ORDER BY AVG(ArrDelay) DESC;
+

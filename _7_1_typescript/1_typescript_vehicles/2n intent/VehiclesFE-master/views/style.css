@@ -1,0 +1,111 @@
+body {
+  background-color: teal;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color:rgb(6, 17, 75);
+}
+
+.carForm {
+  border: 5px solid rgb(6, 17, 75);
+  border-radius: 10%;
+  background-color: white;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.form-group{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.carForm label {
+  font-size: 2rem;
+  padding: 15px;
+}
+
+.carForm input{
+  font-size: 2rem;
+  padding: 15px;
+ 
+}
+#inputMatricula, #inputColor, #inputMarca{
+  font-size: 2rem;
+}
+
+.btn{
+    cursor: pointer;
+    font-size: 1.5rem;
+    background-color: rgb(6, 17, 75);
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.resultat{
+  border: 5px solid rgb(6, 17, 75);
+  border-radius: 10%;
+  background-color: white;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 2;
+  margin: 0 20px;
+}
+
+.wheelForm{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  border:5px solid rgb(6, 17, 75);
+  border-radius: 5%;
+  background-color: white;
+  padding:30px 20px 20px;
+  margin: 20px;
+}
+
+.wheels{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 10px;
+  
+}
+
+.wheelForm label{
+  font-size: 1rem;
+  padding: 5px;
+  margin: 5px auto;
+}
+
+.wheelForm input{
+  font-size: 1rem;
+  margin: 7px;
+}
+
+#wheelBtn{
+  font-size: 1.2rem;
+  padding: 4px 15px;
+  
+}
+.noForm{
+  display: none;
+}
+
+#allInfo{
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,45 @@
+body{
+    background-color: #05445e;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 7rem;
+}
+
+.alert{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 450px;
+    border-radius: 50%;
+    text-align: center;
+
+}
+
+.btn{
+    background-color: #189ab4;
+    border-color: white;
+    margin-bottom: 4rem;
+    color: white;
+}
+
+.btn:hover{
+    background-color: #05445e;
+}
+
+img{
+    height: 250px;
+
+}
+
+
+#joke1{
+    font-size: 1em;
+}
+
+#jokes{
+    font-size: 1.5em;
+}

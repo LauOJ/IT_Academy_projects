@@ -1,0 +1,68 @@
+<div class="tot">
+<h2>Crea els teus codis QR</h2>
+
+<div>
+  <qr-code id="qrCode" [value]="values" [size]="width" [level]="level" [foreground]="foreground"></qr-code>
+</div>
+
+<label>
+  <div class="form-group">
+    <p for="comment">Informació per al teu QR:</p>
+    <textarea class="form-control" rows="3" id="comment" [(ngModel)]="values" placeholder="Escriu aquí"></textarea >
+  </div> 
+</label>
+
+<div class="color">
+  <p>Canvia el color del teu QR!</p>
+<button (click)="qrForeground('darkblue')"></button>
+<button (click)="qrForeground('green')"></button>
+<button (click)="qrForeground('darkorange')"></button>
+<button (click)="qrForeground('black')"></button>
+</div>
+
+<div class="share">
+    <a (click)="toggleCollapse()"><i class="fas fa-share-alt" aria-hidden="true"></i><p>Comparteix-nos!</p></a>
+</div>
+
+  <ul *ngIf="!isCollapsed">
+  <li><button class="btn btn-primary" style="background-color: #55acee;" href="#!" role="button" shareButton="twitter"><i class="fab fa-twitter" aria-hidden="true"></i></button></li>
+
+  <li><button class="btn btn-primary" style="background-color: #3b5998;" href="#!" role="button" shareButton="facebook"><i class="fab fa-facebook" aria-hidden="true"></i></button></li>
+
+  <li><button class="btn btn-primary" style="background-color: #c61118;" href="#!" role="button" shareButton="pinterest"><i class="fab fa-pinterest" aria-hidden="true"></i></button></li>
+
+  <li><button class="btn btn-primary" style="background-color: #25d366;" href="#!" role="button" shareButton="whatsapp"><i class="fab fa-whatsapp" aria-hidden="true"></i></button></li>
+  
+</ul>
+
+
+
+<!-- <br />
+<br />
+<br />
+
+<strong>Change to</strong>:
+<button (click)="qrData('Monica Rambeau')">Monica Rambeau</button>
+<button (click)="qrData('Nosy Neighbor')">Nosy Neighbor</button>
+<button (click)="qrData('Mephisto')"> Mephisto</button>
+
+<br />
+<br />
+<br />
+
+<strong>Change Width</strong>:
+<button (click)="qrWidth(550)">550</button>
+<button (click)="qrWidth(450)">450</button>
+<button (click)="qrWidth(350)">350</button>
+<button (click)="qrWidth(250)">250</button>
+
+<br />
+<br />
+<br />
+
+<strong>Update Level</strong>:
+<button (click)="qrLevel('L')">L</button>
+<button (click)="qrLevel('M')">M</button>
+<button (click)="qrLevel('Q')">Q</button>
+<button (click)="qrLevel('H')">H</button> -->
+</div>
